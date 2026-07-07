@@ -1,0 +1,14 @@
+﻿{
+  "manifest_version": 3,
+  "name": "Code Translate Guard",
+  "version": "1.1.0",
+  "description": "Keeps inline code in place during browser translation.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
